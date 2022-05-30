@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --grill-bg-color: #00BD9C;
+    --shape1-bg-color: #FFC200;
+    --shape2-bg-color: #FA5C0C;
+    --body-bg-color: #212628;
+    --input-bg-color: #E4E4E4;
+    --label-color: #B0B0B0;
+    --container-bg-color: #FAFAFB;
+
+    --box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.004),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.01),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.016),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.023),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.033),
+        100px 100px 80px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background: #B0B0B0;
+    background: -webkit-radial-gradient(top right, #B0B0B0, #E4E4E4);
+    background: -moz-radial-gradient(top right, #B0B0B0, #E4E4E4);
+    background: radial-gradient(to bottom left, #B0B0B0, #E4E4E4);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+}
+
+/* --------------------debut su style container---------------------------- */
+.container {
+    width: 75%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    background-color: var(--container-bg-color);
+    border-radius: 0.1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.title {
+    font-size: 5rem;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 0.2rem;
+}
+
+.tic {
+    color: var(--shape1-bg-color);
+}
+
+.tac {
+    color: var(--grill-bg-color);
+}
+
+.toe {
+    color: var(--shape2-bg-color);
+}
+
+/*-------------------debut style formulaire -------------------------- */
+
+.container-form {
+    background-color: var(--grill-bg-color);
+    width: 50%;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+}
+
+/* Fin du style container */
