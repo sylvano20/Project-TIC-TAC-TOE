@@ -43,19 +43,19 @@ body {
 
 /* --------------------debut su style container---------------------------- */
 .container {
-    width: 75%;
-    height: 85vh;
+    width: 50%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
     align-items: center;
+    justify-content: space-around;
     background-color: var(--container-bg-color);
     border-radius: 0.1rem;
     box-shadow: var(--box-shadow);
 }
 
 .title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 0.2rem;
 }
@@ -75,15 +75,60 @@ body {
 /*-------------------debut style formulaire -------------------------- */
 
 .container-form {
-    background-color: var(--grill-bg-color);
-    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
 }
 
 .formulaire {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
+    width: 100%;
+}
+
+label {
+    color: var(--label-color);
+}
+
+input {
+    padding: 1rem;
+    margin: 1rem 0 1.5rem 0rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--input-bg-color);
+}
+
+.ShapeContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 2.6rem 0;
+}
+
+.shape {
+    width: 3.5rem;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    background-color: var(--shape1-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: var(--grill-bg-color);
+    color: var(--body-bg-color);
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 0.3rem;
 }
 
 /* Fin du style container */
